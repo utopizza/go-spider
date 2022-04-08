@@ -26,7 +26,7 @@ gomod:
 compile: build
 
 build:
-	$(GOBUILD) -o $(HOMEDIR)/mini-spider
+	$(GOBUILD) -o $(HOMEDIR)/go-spider
 
 # make test, test your code
 test: prepare test-case
@@ -37,7 +37,7 @@ test-case:
 package: package-bin package-conf package-data
 package-bin:
 	mkdir -p $(OUTDIR)/bin
-	mv mini-spider $(OUTDIR)/bin
+	mv go-spider $(OUTDIR)/bin
 package-conf:
 	mkdir -p $(OUTDIR)/conf
 	cp -r $(CONFDIR)/* $(OUTDIR)/conf
@@ -48,7 +48,7 @@ package-data:
 # make clean
 clean:
 	rm -rf $(OUTDIR)
-	rm -rf $(HOMEDIR)/mini-spider
+	rm -rf $(HOMEDIR)/go-spider
 
 # avoid filename conflict and speed up build 
 .PHONY: all prepare compile test package clean build
