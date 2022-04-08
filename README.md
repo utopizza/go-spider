@@ -1,5 +1,5 @@
 # 概述
-本项目名为 mini-spider，一个小型的爬虫程序
+本项目名为 go-spider，一个小型的爬虫程序
 
 
 # 代码目录
@@ -40,13 +40,13 @@ crawl方法的主要工作逻辑：
 # 运行
 进入上面build目录的bin目录：cd ./build/bin/
 
-执行命令：./mini-spider -c ../conf -l ../log
+执行命令：./go-spider -c ../conf -l ../log
 
 运行目录：
 ```
 |- build
     |- bin
-        |- mini-spider         // 可执行二进制
+        |- go-spider         // 可执行二进制
     |- conf                   
         |- spider.conf         // 需手动放置或通过外部平台注入
     |- data

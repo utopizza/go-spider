@@ -47,7 +47,7 @@ func main() {
 		return
 	}
 	if *vPtr {
-		fmt.Printf("mini-spider version: %s\n", version)
+		fmt.Printf("go-spider version: %s\n", version)
 		return
 	}
 	if *lPtr == "" {
